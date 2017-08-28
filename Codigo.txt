@@ -1,0 +1,71 @@
+from gpiozero import LED
+rojo = LED(10)	
+led.on()
+
+********************************************
+
+from gpiozero import LED
+from signal import pause
+rojo = LED(10,active_high=True, initial_value=False)	
+led.on()
+pause()
+
+********************************************
+
+from gpiozero import LED
+from signal import pause
+rojo = LED(10,active_high=True, initial_value=True)	
+led.off()
+pause()
+
+********************************************
+
+from gpiozero import LED
+from time import sleep
+rojo = LED(10)
+while True:
+  rojo.on()
+  sleep(1)
+  rojo.off()
+  sleep(1)
+
+********************************************
+
+from gpiozero import LED
+from signal import pause
+rojo = LED(10)
+rojo.blink(on_time=1, off_time=1, n=None, background=True)
+pause()
+
+********************************************
+
+from gpiozero import LED
+from time import sleep
+rojo = LED(10)
+while True:
+  rojo.toggle()
+  sleep(1)
+
+********************************************
+
+from gpiozero import LED
+from time sleep
+rojo = LED(10)
+rojo.blink()
+while True:
+  if rojo.is_lit()
+    print("Encendido")
+  else
+    print("Apagado")
+  end
+  sleep(0.5)
+
+********************************************
+
+
+from gpiozero import LED
+from signal import pause
+rojo = LED(10,active_high=True, initial_value=True)	
+pp = rojo.pin()
+print("Pin: ")
+println(pp)
